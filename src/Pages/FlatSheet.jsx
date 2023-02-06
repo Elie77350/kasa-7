@@ -13,18 +13,14 @@ function FlatSheet() {
 const id = useParams();
 const flatSheet = ApartmentList.find(apartment => apartment.id === id.id);
 
-const apartmentTags = flatSheet?.tags.map((tags, index) => {
-	return <Tag key={index} value={tags} />
+const apartmentTags = flatSheet?.tags.map((tag, index) => {
+	return <Tag key={index} value={tag} />
 });
 
 let apartmentRate = [];
-let fullStar = false;
 
 for (let index = 0; index < 5; index++) {
-	if (index === parseInt(flatSheet?.rating)) {
-		fullStar = false;
-	}
-	if (fullStar === true) {
+	if (index < parseInt(flatSheet?.rating)) {
 		apartmentRate.push(<img key={index} className='star' src={starF} alt={`${flatSheet?.rating}/5}`}/>)
 	} else {
 		apartmentRate.push(<img key={index} className='star' src={starE} alt={`${flatSheet?.rating}/5}`}/>)

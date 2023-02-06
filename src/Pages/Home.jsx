@@ -13,7 +13,7 @@ function Home() {
 						<Banner image={bannerH} texte="Chez vous, partout et ailleurs"/>
 						<div className='apartment__card'>
 								{apartmentList.map((apartment) => <NavLink key={apartment.id} to={'/apartment/'+apartment.id+'/#'}>
-								<Card key={apartment.id} id={apartment.id} image={apartment.cover} titre={apartment.title} />
+								<Card key={apartment.id} id={apartment.id} image={apartment.cover} title={apartment.title} />
 								</NavLink>)}
 					</div>
 		</div>
