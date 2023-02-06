@@ -1,0 +1,15 @@
+header {
+  align-items: center;
+  display: inline-flex;
+  margin: 40px 10%;
+}
+header header {
+  justify-content: flex-end;
+  display: flex;
+  width: 100%;
+}
+header header > logo {
+  height: 68px;
+}
+
+/*# sourceMappingURL=Header.css.map */
