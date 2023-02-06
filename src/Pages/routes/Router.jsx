@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "../../Components/Layout/Header";
-import About from "../About";
-import FlatSheet from "../FlatSheet";
-import ErrorPage from "../ErrorPage";
+import About from "../../Pages/About";
+import FlatSheet from "../../Pages/FlatSheet";
+import ErrorPage from "../../Pages/ErrorPage";
 import Footer from '../../Components/Layout/Footer';
-import Home from '../Home';
+import Home from '../../Pages/Home';
 
 
 function Router() {

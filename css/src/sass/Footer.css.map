@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"Footer.css"}
+{"version":3,"sourceRoot":"","sources":["../../../src/sass/Footer.sass"],"names":[],"mappings":"AAGA;EACE,kBAJgB;EAKhB;EACA;EACA;;;AAGF;EACE;EACA;EACA;EACA;;AAEA;EACE;EACA;;AAEF;EACE,OApBS;EAqBT","file":"Footer.css"}

@@ -2,7 +2,7 @@ import React from 'react';
 import Banner from '../Components/Layout/Banner';
 import bannerA from '../assets/img/bannerA.png';
 import Dropdown from '../Components/Dropdown';
-import Home from '../Pages/Home';
+import Home from './Home';
 
 
 function About() {

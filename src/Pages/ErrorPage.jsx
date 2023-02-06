@@ -1,7 +1,7 @@
 import React from 'react';
 import '../sass/ErrorPage.sass';
 import { NavLink } from "react-router-dom";
-import Home from '../Pages/Home';
+import Home from './Home';
 
 function ErrorPage() {
 	return (

@@ -1,17 +1,40 @@
-/* Error: Expected identifier.
- *   ,
- * 1 | .
- *   |  ^
- *   '
- *   Banner.sass 1:2  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected identifier.\a   \2577 \a 1 \2502  .\a   \2502   ^\a   \2575 \a   Banner.sass 1:2  root stylesheet";
+.banner {
+  border-radius: 25px;
+  height: 225px;
+  margin-bottom: 35px;
+  position: relative;
 }
+.banner__img {
+  border-radius: 25px;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.banner__mask {
+  background-color: #000000;
+  border-radius: 25px;
+  height: 100%;
+  left: 0;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.banner__txt {
+  color: #ffffff;
+  font-size: 48px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1490px) {
+  .banner__txt {
+    font-size: 20px;
+    left: 15px;
+    transform: translateY(-50%);
+  }
+}
+
+/*# sourceMappingURL=Banner.css.map */

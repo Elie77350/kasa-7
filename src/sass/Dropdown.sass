@@ -1,0 +1,55 @@
+$color-primary: #ff6060
+$color-secondary: #000000
+$color-text: #ffffff
+$color-terciary: #f6f6f6
+
+.dropdown
+	border-radius: 5px
+	margin-bottom: 35px
+	text-align: left
+
+
+.top__dropdown
+	align-items: center
+	background-color: $color-primary
+	border-radius: 5px
+	display: inline-flex
+	height: 25%
+	min-height: 50px
+	width: 100%
+
+
+.title__dropdown
+	color: $color-text
+	height: 50px
+	line-height: 50px
+	margin: 5px 10px
+
+
+.arrow__dropdown
+	display: flex
+	justify-content: flex-end
+	margin-right: 10px
+	width: 100%
+
+	&:hover
+		cursor: pointer
+
+	&.true
+		justify-content: start
+		transform: rotate(-180deg)
+
+
+.body__dropdown
+	background-color: $color-terciary
+	border-bottom-left-radius: 5px
+	border-bottom-right-radius: 5px
+	color: $color-primary
+	height: 75%
+	margin-top: -10px
+	min-height: 100px
+	padding: 25px 10px 10px 10px
+
+
+
+

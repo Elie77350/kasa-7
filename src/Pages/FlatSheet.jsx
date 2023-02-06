@@ -1,11 +1,11 @@
 import React from 'react';
-import './sass/Flatsheet.sass';
+import '../sass/Flatsheet.sass';
 import { useNavigate, useParams } from 'react-router-dom';
 import ApartmentList from '../data/apartmentList.json';
 import Slider from '../Components/Slider';
 import Tag from '../Components/Tag';
-import starF from './assets/img/starF.png';
-import starE from './assets/img/starE.png';
+import starF from '../assets/img/starF.png';
+import starE from '../assets/img/starE.png';
 import Dropdown from '../Components/Dropdown';
 
 function FlatSheet() {
@@ -36,7 +36,7 @@ const flatEquipment = flatSheet?.equipments.map((equipment, index) => {
 })
 
 	return (
-		<>
+		<div>
 			{
 				flatSheet ? (
 					<div className='flatsheet'>
@@ -55,7 +55,6 @@ const flatEquipment = flatSheet?.equipments.map((equipment, index) => {
 							<div className='rate'>{apartmentRate}</div>
 						</div>
 					</div>
-					<div>
 						<div className='description__equipment'>
 							<Dropdown titre='Description' description={flatSheet?.description}/>
 							<Dropdown titre='Équipements' description={flatEquipment}/>
@@ -63,9 +62,9 @@ const flatEquipment = flatSheet?.equipments.map((equipment, index) => {
 					</div>
 				) : <useNavigate replace to='/ErrorPage'/>
 			}
-		</>
-		)
+		</div>
+	)
 }
 
 
-export default FlatSheet;
+ export default FlatSheet;

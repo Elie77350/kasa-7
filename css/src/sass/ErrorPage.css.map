@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"ErrorPage.css"}
+{"version":3,"sourceRoot":"","sources":["../../../src/sass/ErrorPage.sass"],"names":[],"mappings":"AAEA;EACC;;;AAGD;EACC,OAPe;EAQf;EACA;;;AAGD;EACC,OAbe;EAcf;EACA;;;AAIA;EACC;EACA;;;AAGF;EACC;IACC;;EAED;IACC","file":"ErrorPage.css"}

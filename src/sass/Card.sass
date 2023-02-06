@@ -1,0 +1,41 @@
+$color-primary: #ff6060
+$color-secondary: #000000
+$color-terciary: #f6f6f6
+$color-text: #ffffff
+
+
+.card
+  border-radius: 10px
+  height: 100%
+  min-height: 340px
+  position: relative
+
+
+.card__image
+  border-radius: 10px
+  height: 100%
+  object-fit: cover
+  width: 100%
+
+
+.card
+  &:hover
+    & > .card__image
+      transform: scale(1.02)
+      transition-duration: 0.1s
+      filter: saturate(3)
+
+
+.card__title
+  bottom: 20px
+  color: $color-text
+  font-size: 18px
+  left: 20px
+  margin-right: 20px
+  position: absolute
+
+
+@media screen and (max-width: 1490px)
+  .card
+    min-height: 255px
+

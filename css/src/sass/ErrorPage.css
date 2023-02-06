@@ -1,3 +1,31 @@
+.errorpage {
+  text-align: center;
+}
 
+.title__errorpage {
+  color: #ff6060;
+  font-size: 150px;
+  margin: auto;
+}
+
+.description__errorpage {
+  color: #ff6060;
+  display: block;
+  font-size: 20px;
+}
+
+.nav__link.error__link {
+  display: block;
+  margin-top: 150px;
+}
+
+@media screen and (max-width: 1490px) {
+  .title__errorpage {
+    font-size: 96px;
+  }
+  .description__errorpage {
+    font-size: 18px;
+  }
+}
 
 /*# sourceMappingURL=ErrorPage.css.map */

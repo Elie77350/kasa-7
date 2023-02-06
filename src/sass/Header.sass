@@ -1,0 +1,47 @@
+$color-primary: #ff6060
+$color-secondary: #000000
+
+header
+  align-items: center
+  display: inline-flex
+  margin: 40px 10%
+  width: 80%
+
+  & >
+    logo
+      height: 68px
+
+
+nav
+  justify-content: flex-end
+  display: flex
+  width: 100%
+
+
+.nav__link
+  color: $color-primary
+  margin: auto 25px
+  text-decoration: none
+
+  &:hover
+    color: $color-secondary
+
+
+.link--menu
+  &.active
+    border-bottom: 1px solid $color-primary
+
+
+@media screen and (max-width: 1490px)
+  header
+    margin: 40px 2.5%
+    width: 95%
+
+    & > img
+      height: 47px
+
+  .nav__link
+    margin: auto 5px
+
+
+

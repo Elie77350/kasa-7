@@ -1,5 +1,5 @@
 import React from 'react';
-import './Components/Tag.sass';
+import '../sass/Tag.sass';
 
 function Tag({name}) {
 	return (

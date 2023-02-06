@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './Slider.sass';
-import arrow from '../../assets/img/arrow.png';
+import '../sass/Slider.sass';
+import arrow from '../assets/img/arrow.png';
 
 
 function Slider({pictures}) {
