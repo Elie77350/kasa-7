@@ -3,9 +3,9 @@ import '../sass/Slider.sass';
 import arrow from '../assets/img/arrow.png';
 
 
-function Slider({pictures}) {
+function Slider({images}) {
 	let [slide, setSlide] = useState(0);
-	let sliderLength = pictures.length;
+	let sliderLength = images.length;
 
 
 	const previousImg = () => {
@@ -34,9 +34,9 @@ function Slider({pictures}) {
 				sliderLength > 1 && <img className='arrow arrow__left' src={arrow} alt='previous content' onClick={previousImg}/>
 			}
 			{
-				pictures.map((picture, index) => {
+				images.map((image, index) => {
 					return (
-						<img key={index} className={index === slide  ? 'slider__img actif' : 'slider__img'} src={picture} alt='apartment'/>
+						<img key={index} className={index === slide  ? 'slider__img actif' : 'slider__img'} src={image} alt='Logement'/>
 					)
 				})
 			}

@@ -6,7 +6,7 @@ import logoH from '../../assets/img/logoH.png';
 function Header() {
 	return (
 		<header>
-			<img src={ logoH } alt="logo" />
+			<img src={logoH} alt="logo" />
 			<nav>
 				<NavLink to='/home' className={'nav__link link__menu'}>Home</NavLink>
 				<NavLink to='/about' className='nav__link link__menu'>About</NavLink>
