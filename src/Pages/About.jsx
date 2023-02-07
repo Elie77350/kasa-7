@@ -16,3 +16,19 @@ function About() {
 }
 
 export default About;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//* c'est une fonction qui afficher la page "À Propos". Elle importe d'abord le composant "Banner" et son image, ensuite on importe le composant "Dropdown" qui retourne l'élément HTML banner pour afficher 4 dropdowns avec leurs titres et leurs descriptions

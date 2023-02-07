@@ -1,6 +1,6 @@
 import React from 'react';
 import '../sass/Flatsheet.sass';
-import { useNavigate, useParams } from 'react-router-dom';
+import { Navigate, useParams } from 'react-router-dom';
 import ApartmentList from '../data/apartmentList.json';
 import Slider from '../Components/Slider';
 import Tag from '../Components/Tag';
@@ -56,7 +56,7 @@ const flatEquipment = flatSheet?.equipments.map((equipment, index) => {
 							<Dropdown titre='Équipements' description={flatEquipment}/>
 						</div>
 					</div>
-				) : <useNavigate replace to='/ErrorPage'/>
+				) : <Navigate to='/ErrorPage'/>
 			}
 		</div>
 	)
