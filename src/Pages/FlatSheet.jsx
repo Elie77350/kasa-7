@@ -14,7 +14,7 @@ const id = useParams();
 const flatSheet = ApartmentList.find(apartment => apartment.id === id.id);
 
 const apartmentTags = flatSheet?.tags.map((tag, index) => {
-	return <Tag key={index} value={tag} />
+	return <Tag key={index} name={tag} />
 });
 
 let apartmentRate = [];
