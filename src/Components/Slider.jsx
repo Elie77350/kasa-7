@@ -7,6 +7,8 @@ function Slider({images}) {
 	let [slide, setSlide] = useState(0);
 	let sliderLength = images.length;
 
+	const allSlide = sliderLength > 1;  //ATTENTION
+
 
 	const previousImg = () => {
 		if (slide === 0) {
@@ -43,6 +45,16 @@ function Slider({images}) {
 			{
 				sliderLength > 1 && <img className='arrow arrow__right' src={arrow} alt='next content' onClick={nextImg}/>
 			}
+
+			{allSlide && (
+				<p className='slide__counter'>
+					{slide + 1}/{sliderLength}
+				</p>
+			)}
+
+
+
+
 		</div>
 	);
 }
